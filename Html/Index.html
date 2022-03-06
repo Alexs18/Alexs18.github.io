@@ -180,6 +180,57 @@
             <section class="TextInformation">
                 <blockquote>
                     <h1>Bloque 4</h1>
+                    <h3>Contenido de archivos</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+                        listar el contenido de un documento puede ser de gran utilidad cuando queramos realizar una modificacion de un archivo establecido, o algun fichero que necesite alguna credencial, para ello veremos 3 formas de listar un archivo en linux.
+
+                        Obviamente si no tenemos ningun archivo, crearemos uno con el siguiente comando.
+                    </p>
+                    <span>
+                        nano ListadeAnimales.txt
+                    </span>
+                    <img src="../img/Contenidos1.png" alt="">
+                    <p>
+                        Luego de ello guardamos con control O y salimos con control x.
+                        luego de ello veremos las siguentes formas de listar un fichero en linux
+                    </p>
+                    <h3>Cat</h3>
+                    <p>
+                        nos mostrara el contenido de un archivo sin importar la cantidad de lineas que se encuentren en el, es decir no nos restringuira la vista a solo unas cuantas lineas.
+                    </p>
+                    <img src="../img/Contenido2.png" alt="">
+
+                    <h3>Head</h3>
+                    <p>
+                        el comando head nos restringuira la vision a las 10 primeras lineas del contenido que queramos mostrar.
+                    </p>
+                    <img src="../img/Contenido3.png" alt="">
+
+                    <h3>Tail</h3>
+                    <p>
+                        el comando tail por el contrario nos mostrara las 10 ultimas lineas.
+                    </p>
+                    <img src="../img/Contenido4.png" alt="">
+                    <h3>Similitudes</h3>
+                    <p>
+                        Sin embargo estos 2 comando tienen una particularidad, es decir que podemos visualizar entre lineas especificas, es decir podemos decirle que nos muestre solo las 5 primeras lineas o las lineas que queramos ver, y esto puede ser muy interesante cuando queramos examinar un codigo de forma rapida.
+                        como podemos notar en el siguiente ejemplo al comando tail le decimos que queremos ver las 2 ultimas lineas, y al comando head, le decimos que queremos ver las 3 primeras lineas, y tambien nos damos cuenta que es un argumento que no se puede utilizar con el comando cat.
+                    </p>
+                    <img src="../img/Contenido5.png" alt="">
+                    <h3>Ejemplo</h3>
+                    <p>
+                        haciendo un ejemplo con un archivo css, podemos ver que tambien puede exeder el limitante 10 que nos indica su documentacion oficial, si le pasamos un numero mayor a este 
+                    </p>
+                    <img src="../img/Contenido6.png" alt="">
+
+                </blockquote>
+                
+            </section>
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 5</h1>
                     <h3>Grupos y permisos</h3>
                 </blockquote>
                 <blockquote>
@@ -198,6 +249,89 @@
                 </blockquote>
                 
             </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 6</h1>
+                    <h3>Jugando con los archivos</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+                        Ya hemos visto como crear archivos, listar archivos y de mas.
+
+                        ahora procederemos a ver algunas de las opciones que tienen estos archivos.
+                        
+                        comenzaremos copiando archivos.
+                        
+                        para esto utilizaremos el comando cp el cual cuenta con los siguientes parametros
+                    </p>
+                    <span>
+                        cp SOURCES DESTINATION
+                    </span>
+                    <p>
+                        sources = la ruta donde esta el archivo que queremos copiar
+
+                        destination = la ruta donde queremos copiar ese archivo
+
+                        quisas suena un poco confuso, pero se entendera mas claro adelante.
+                    </p>
+                    <h1>Practica</h1>
+                    <h3>Copiando Archivos</h3>
+                    <p>
+                        sources = la ruta donde esta el archivo que queremos copiar
+
+                        destination = la ruta donde queremos copiar ese archivo
+
+                        quisas suena un poco confuso, pero se entendera mas claro adelante.
+                    </p>
+
+                    <img src="../img/Crud1.png" alt="">
+                    <span>
+                        dentro de la carpeta Ecuador vamos a crear el fichero personas.txt con una lista random de nombres.
+                    </span>
+                    <img src="../img/Crud2.png" alt="">
+                    <p>
+                        Luego de ello procederemos a copiar esa lista de personas a la carpeta Canada, desde la ubicacion del escritorio, es decir un nivel menos en el cual nos encontramos actualmente.
+
+                        Como tenemos a ambas carpetas en la misma ruta sera un poco mas sencilla la copia del archivo.
+                    </p>
+                    <img src="../img/Crud3.png" alt="">
+                    <p>
+                        Como podemos observar, ya hemos ingresado al directorio home, en el cual ya no nos aparecera que sus archivos pertenecen al usuario root y el grupo root, si no que cambian al usuario que tenemos por defecto logeado, y su respectivo grupo que por defecto es el mismo nombre del usuario .
+                    </p>
+                    <h3>Moviendo Archivos</h3>
+                    <p>
+                        podemos mover multiples archivos con el comando mv, este nos permite mover carpetas, o ficheros, aunque si regresamos al inicio del post podemos ver que todo en linux es considerado un fichero.
+                        lo primero que hacemos es verificar nuestro contenido, una vez realizado esto procedemos a colocar el comando mv seguido del archivo o carpeta que queramos mover y luego el destino.
+                    </p>
+                    <img src="../img/Crud4.png" alt="">
+                    <span>
+                        Podemos tambien mover multiples archivos tal como se puede ver a continuacion.
+                        Como podemos ver en esta ocacion movemos las carpetas ecuador y canada
+                    </span>
+                    <img src="../img/Crud5.png" alt="">
+                    <h3>
+                        Eliminando Archivos
+                    </h3>
+                    <p>
+                        asi de facil como los dos comandos anteriores, tambien podemos eliminar un fichero de la misma manera, ahora utilizando el comando rm.
+
+                        sus parametros son los siguientes.
+
+                        rm remueve archivos .whathever
+
+                        rm -r remueve carpetas.
+
+                        una de las cosas que hay que tener en cuenta es que no nos pregunta si queremos confrmar nuestra eliminacion, asi que debemos tener cuidado con lo que borramos.
+
+                        en el primer ejemplo podemos ver que crea un archivo de texto y lo elimina con el comando rm, y en el segundo ejemplo podemos ver que crea una carpeta y la elimina con el comando rm -l
+                    </p>
+                    <img src="../img/Crud6.png" alt="">
+
+                </blockquote>
+                
+            </section>
+
 
         </section>
         
