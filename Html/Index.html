@@ -9,7 +9,7 @@
     <title>Commandos en Linux</title>
 </head>
 <body>
-    <footer>
+    <header>
         <div class="ContentImg">
             <img class="ClassLogo" src="../img/UbuntuLogo.jpg" alt="">
         </div>
@@ -21,7 +21,7 @@
                <li>About Linux</li>
            </ul> 
         </div>
-    </footer>
+    </header>
     <div class="ContentText">
         <section class="Information">
 
@@ -332,6 +332,544 @@
                 
             </section>
 
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 7</h1>
+                    <h3>Examinando Archivos</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+
+                        grep es un comando que nos sirve para buscar un caracter especifico dentro de un archivo, 
+                        esto nos puede servir de mucho si queremos encontrar algun tipo de error en un codigo, 
+                        o simplemente necesitemos encontrar cierta configuracion en un archivo importante 
+                        y este tiene demasiadas lineas.
+                       
+                    </p>
+                    <img src="../img/Examinando1.png" alt="">
+                    <span>
+                       <strong> Uso Basico del comando grep</strong>
+                    </span>
+                    <p>
+                        como podemos ver en la imagen anterior,
+                         el comando grep esta usando 2 parametros,
+                          el primero es la letra que queremos buscar 
+                          y el segundo es el archivo que queremos buscar, 
+                          es muy importante que coloquemos la extencion 
+                          de este, caso contrario no podremos saber su contenido.
+                    </p>
+                    <h1>Parametros adicionales</h1>
+                    
+                    <p>
+                        adicionalmente podemos usar otro tipos de parametros que nos ayudaran a saber mas singularidades sobre nuestra busqueda, es decir podemos buscar sin depender si la letra sea mayuscula o minuscula, o tambien podemos ver la linea en la que se encuentra el apartado a buscar. estos son los siguientes ejemplos.
+
+                        el comando -c nos muestra la cantida de elementos que se encuentran con ese caracter
+
+                        el comando -i nos ayuda a que no distinga sila busqueda es mayusucula o minuscula
+
+                        el comando -r Habilita la busqueda recursiba
+
+                        el comando -n nos muestra la linea en la cual se encuentra dicho caracter.
+
+                        y el comando -v nos muetra las lineas que no coinciden con el patron de busqueda
+                    </p>
+
+                    <img src="../img/Examinando2.png" alt="">
+                    <h2>Ejemplo</h2>
+                    <span>
+                        vamos a buscar cuantas etiquetas section hay en un archivo html, de unas 500 lineas de codigo mas o menos.
+                    </span>
+                    <img src="../img/Examinando3.png" alt="">
+                    <p>
+                        como podemos ver utilizando el comando grep sin parametros obtuvimos las secciones que tiene ese documento,
+                         y con el parametro -n podemos especificar en que linea se encuentra dichas secciones.
+                    </p>
+
+                    <h1>Expresiones regulares</h1>
+                    <p>
+                        las expresiones regulares nos permiten ser mas especificos en nuestra busqueda, 
+                        por ejemplo podremos encontrar las palabras que empiecen en un caracter,
+                         o buscar mas de un caracter, imaginemonos que en un archivos 
+                         .cvs debemos encontrar solo los apellidos lopez que tengan como campo clientes tipo 
+                         super, para ello mexclariamos una serie de expresiones que veremos a continuacion.
+                        En el siguiente ejemplo vemos como puede encontrar las etiquetas section  y las etiquetas div
+                    </p>
+                    <img src="../img/Examinando4.png" alt="">
+                    <p>
+                        y en el siguiente ejemplo aunque parezca igual, vemos como podemos unir el comando -n para que nos muestre las lineas en las cuales se encuentran.
+                    </p>
+                    <img src="../img/Examinando5.png" alt="">
+                    <p>
+                        Esto lo podemos hacer gracias al comando -E, aunque tambien podriamos usar el comando egrep, que viene siendo lo mismo.
+                    </p>
+                    <img src="../img/Examinando6.png" alt="">
+                    <span>
+                        En el ejemplo anterior,vemos como primero hace una busqueda especifica gracias a los caracteres [a-c] que nos cuenta la cantidad 
+                        de letras a y c que hay en el documento, en el siguiente nos cuenta todas las etiquetas section, y en la ultima nos cuenta todas los caracteres que no son section, es decir el resto del documento.
+                    </span>
+                    <img src="../img/Examinando7.png" alt="">
+
+                    <p>
+                        En el ejemplo anterior podemos ver que tenemos 
+                        una serio de comandos por ejemplo $ que nos permite 
+                        saber el caracter con el que termina una letra es decir si
+                         tenemos una letra que termine en ar, por ejemplo dolar, 
+                         o volar, nos las mostrara, a si mismo tenemos los puntos, 
+                         los que nos dan un intervalo de un caracter especifico, 
+                         por ejemplo si tenemo esta busqueda a..x y en nuestro 
+                         documento tenemos los nombres de alexis y alexandra, esos nos 
+                         mostrara debido a que coinciden los espacios con la letras a buscar.
+                    </p>
+
+                </blockquote>
+                
+            </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 8</h1>
+                    <h3>Apagado del sistema</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+
+                        Una de las cosas mas basicas que debemos saber al momento de usar un nuevo sistema operativo 
+                        es como apagarlo, en ocaciones estos nos muestran un boton que esta casi siempre a
+                         nuestra vista general como diciendonos hey tocanos aqui se apaga tu pc, 
+                         pero muchas veces cuando estamos administrando un sistema operativo instalado sin interfaz grafica no 
+                         sabemos que hacer, es por ello que vamos a utilizar el siguiente comando en linux para 
+                         apagar o para programar un apagado cuando nosotros queramos.
+                        cabe recalcar que si nuestro sistema funciona como servidor y hay mas usuarios 
+                        logeados en el, el mensaje que se apagara el equipo, le llegara a todos ellos.
+                       
+                    </p>
+                    <article>
+                        <h2>Comando Basico de Apagado</h2>
+                        <span>shutdown.</span>
+                        <h2>Apagar Ahora</h2>
+                        <ul>
+                            <li>Shutdown now</li>
+                            <li>Shutdown</li>
+                            <li>Shutdown -p</li>
+                        </ul>
+                        <h2>Programar apagado</h2>
+                        <ul>
+                            <li>Shutdown -h 1:20</li>
+                            <li>Shutdown 1:20</li>
+                        </ul>
+                        <h2>Reiniciar Sistema</h2>
+                        <ul>
+                            <li>Shutdown -r</li>
+                            <li>Shutdown -r 1:20</li>
+                        </ul>
+                        <h2>Cancelar Apagado</h2>
+                        <span>Shutdown -c</span>
+                        <h2>podemos agregar un mensaje al momento de apagar el equipo o reiniciarlo</h2>
+                        <ul>
+                            <li>shutdown +10 “See you soon guys”</li>
+                            <li>shutdown -r +10 ”I need to restart see you soon”</li>
+                        </ul>
+                        <span>
+                            el mas 10significa que la accion se llevara a cabo en 10 minutos
+                        </span>
+                    </article>
+                    
+
+                </blockquote>
+                
+            </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 9</h1>
+                    <h3>Configuracion de la red</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+
+                        Uno de los conceptos mas importantes que un administrador de sistemas operativos debe saber, es el 
+                        de administracion de la red, es decir las configuraciones establecidas o administradas en las
+                        direcciones Ip, para esto vamos a conocer sobre el comando ifconfig, el cual nos muestra la direccion 
+                        ip que se recive del router, o que tenemos configurada para nuestra red.
+                        para esto si no tenemos instalado el paquete de herramienta de redes, procederemos a colocar el siguiente comando.
+                       
+                    </p>
+                    <br>
+                    <span>
+                        <strong>sudo apt install net-tools</strong>
+                    </span>
+
+                    <article>
+                       <p>
+                        Luego de ello procedemos a verificar 
+                        nuestra direccion ip con el comando ifconfig.
+                        y nos saldra el siguiente resultado.
+                       </p>
+                       <img src="../img/Red1.png" alt="">
+                       <p>
+                        en el cual en la tercera fila nos muestra la direccion ip con su mascara de red que
+                         viene por defecto gracias al servicio de internet.
+                       </p>
+                    </article>
+
+                    <article>
+                        <h1>Ejemplo</h1>
+                        <p>
+                            como no tenemos otra computadora conectada, apuntaremos a nuestra propia 
+                            direccion ip, con el  parametro -c para especificar la cantidad de paquetes que queramos enviar y que su interaccion no sea continua
+                        </p>
+                        <img src="../img/Red2.png" alt="">
+                        <p>
+                            Por ejemplo en este ejemplo podemos ver que en el primer comando se detiene a partir del 4to envio, y como todo informatico, sabremos que se comienza a contar desde cero.
+                            en el segundo comando, no le pasamos el parametro -c y como podremos darnos cuenta que la interaccion o el envio de paquetes continua, hasta que demos control+c.
+                        </p>
+                    </article>
+                    
+                    <h1>
+                        Nota
+                    </h1>
+                    <p>
+                        tambien podemos hacer ping a paginas como facebook, google, amazon, etc, para confirmar que contamos con acceso a 
+                        internet en nuestro ordenador, y no golpearlo pensando que es un problema de hardware cuando en realidad el mayor numero de veces es de software 😐
+                    </p>
+
+                </blockquote>
+                
+            </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 10</h1>
+                    <h3>Procesos en Linux.</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+
+                        como ya sabemos las computadoras cuentan con diferentes programas que se encuentran ejecutados para su funcionamiento.
+
+                        si bien en ocaciones los usuarios normales ven  la pantalla de un computador y creen que funciona por arte de magia, nosotros como desarrolladores o personas asociadas a la tecnologia, sabemos que siempre hay un proceso detras del hecho.
+
+                        entonces podemos caer en cuenta que dentro de una computadora siempre existen procesos corriendo para su funcionamiento.
+
+                        pero para ser mas especifico, los procesos son instancias de la ejecucion de x programa, que corre por un periodo de tiempo, ocupando un espacio de memoria y que son asociados a el usuario que lo ejecuto.
+
+                        para ver los procesos en linux, podemos usar el comando ps. el cual nos dara el siguiente resultado.
+                       
+                    </p>
+                    <img src="../img/Procesos1.png" alt="">
+                    <span>
+                        quiza este comando no nos diga mucho por si solo, pero aqui nos indica cual es el Id de ese proceso (PID), TTY(TERMINAL EN LA CUAL SE EJECUTA), TIME(tiempo que lleva en ejecucion), CMD(Nombre del comando que inicio el proceso). entre otras caracteristicas que veremos mas a delante.
+                    </span>
+                    <article>
+                        <h1>Comando ps -e</h1>
+                       <p>
+                        este comando podemos ver los procesos que corren actualmente en la terminal, como vemos en el siguiente ejemplo.
+                       </p>
+                       <img src="../img/Procesos2.png" alt="">
+                       <p>
+                        como podemos ver los procesos son aquellos que se estan ejecutando en la terminal 1 y 2 
+                        con el comando ps -ef podemos ver mas detalles acerca de los procesos que se estan ejecutando.
+                       </p>
+                       <img src="../img/Procesos3.png" alt="">
+                       <span>
+                        como podemos ver los parametros nuevos que se 
+                        anadieron fueron uid que significa el usuario que ejecuto o mantiene en ejecucion ese proceso, y el ppid, que es el padre del proceso, y en 
+                        cuanto al pid viene siendo solo el id del proceso.
+                       </span>
+                    </article>
+
+                    <article>
+                        <h1>Ejemplo</h1>
+                        <p>
+                            en este ejemplo, vamos a ejecutar un proceso, el cual sera nuestro editor de texto visual estudio code, y luego vamos a mostrarlo con el comando ps -e
+                        </p>
+                        <img src="../img/Procesos4.png" alt="">
+                        <p>
+                            Por ejemplo en este ejemplo podemos ver que en el primer comando se detiene a partir del 4to envio, y como todo informatico, sabremos que se comienza a contar desde cero.
+                            en el segundo comando, no le pasamos el parametro -c y como podremos darnos cuenta que la interaccion o el envio de paquetes continua, hasta que demos control+c.
+                        </p>
+                        <span>
+                            como podemos ver no lo encontramos ya que es un proceso que recien acabamos de ejecutar, y debemos buscarlo mas abajo, es decir al final o casi final de dicha lista.
+                        </span>
+                        <img src="../img/Procesos5.png" alt="">
+                        <p>
+                            como podemos ver se esta ejecutando con el numero de id, su tiempo de ejecucion y el nombre del proceso.
+                            ahora si queremos detener o matar ese proceso usaremos el comando kill numeroID, cabe recalcar que cuando el proceso se inicio, se abrio visual studio code, y una vez lo cerremos o lo matemos, nuestro editor de codigo se cerrara.
+                        </p>
+                        <img src="../img/Procesos6.png" alt="">
+                        <span>
+                            como podemos notar ya no se encuentra el proceso que acabamos de eliminar.
+                        </span>
+                    </article>
+
+                    <article>
+                        <h1>Ejemplo2</h1>
+                        <p>
+                            en el siguiente ejemplo podemos ver como podemos ver los procesos cuando se empiezan a ejecutar sin tener que volver a ejecutar el comando ps -e o ps -f, esto lo haremos con el comando top.
+                        </p>
+                        <h2>
+                            Practica
+                        </h2>
+                        <p>
+                            para la practica abriremos 2 terminales, en la primera veremos los procesos activos en primer plano 
+                            con el comando top, y en la segunda terminal en primer lugar crearemos un proceso y luego lo eliminaremos.
+                        </p>
+                        <img src="../img/Procesos7.png" alt="">
+                        <P>
+                            Aunque parece un poco complejo el proceso, nos acostumbramos a visualizarlos con la practica.
+                            otra forma de buscar los procesos que estan ejecutando es uniendo el comando grep a nuestra busqueda.
+                        </P>
+                        <img src="../img/Procesos8.png" alt="">
+                        <br>
+                        <span>
+                            Cabe destacar que tambien podemos convinar los comandos que podemos usar con grep para este proceso.
+                        </span>
+                    </article>
+
+                </blockquote>
+                
+            </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 11</h1>
+                    <h3>Administrador de paquetes</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+                        si estas involucrado en el mundo de la programacion, ya has de tener experiencia con los administradores de paquetes. 
+
+                        un administrador de paquetes es aquel que te permite descargar herramientas o librerias externas para hacernos la vida mas facil como usuarios.
+
+                        en el caso de linux, a ser un software open source, siempre tenemos actualizaciones, pendientes, por lo que es recomendable cada cierto tiempo ejecutar el comando.
+                    </p>
+                    <span>
+                        <strong>
+                            apt-get update
+                        </strong>
+                    </span>
+                    <p>
+                        con este comando podemos descargar tambien programas como ejemplo git, que es muy utilizado por desarrolladores, gestores de bases de datos, programas como visual estudio, entre otros.
+                    </p>
+                
+                    <article>
+                        <h1>Instalacion de paquetes</h1>
+                       <p>
+                        la estructura para instalar paquetes en linux es la siguiente
+                        </p>
+                        <span>
+                            <strong>
+                                apt-get install "loque queramos instalar"
+                            </strong>
+                        </span>
+                        <span>
+                            <strong>
+                                apt-get purge --remove "loque queramos desintalar"
+                            </strong>
+                        </span>
+                    </article>
+
+                    <article>
+                        <h1>Ejemplo</h1>
+                        <p>
+                            Para el siguiente ejemplo vamos a instalar una libreria de una animacion, para pasar el rato, la cual nos indica que debemos utilizar el siguiente comando.
+                        </p>
+                        <span>
+                            <strong>
+                                sudo apt-get install cowsay
+                            </strong>
+                        </span>
+                        <img src="../img/Paquetes1.png" alt="">
+                        <p>
+                            si queremos desinstalarlo sera el siguiente comando
+                        </p>
+                       
+                        <img src="../img/Paquetes2.png" alt="">
+                        <br>
+                        <span>
+                            como podemos ver ya esta totalmente desinstalado y no lo podemos usar.
+                        </span>
+                    </article>
+
+                </blockquote>
+                
+            </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 12</h1>
+                    <h3>Creacion de usuarios</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+                        Muchas veces para querer administrar un sistema operativo es necesario que este contenga multiples cuentas de usuarios, las cuales podremos administrar mediante el super usuario o el usuario root para crear una cuenta de usuario lo  primero que debemos hacer es ingresar a la terminal como usuario administrador.
+                    </p>
+                    <img src="../img/Usuarios1.png" alt="">
+                    <p>
+                        en este caso como ya habiamos accedido con anterioridad no nos pedira la contrasena nuevamente.
+
+                        lo segundo que haremos sera agregar un un nuevo usuario.
+
+                        Para agregar usuarios en linux existen dos diferentes metodos que son mediante el comando adduser y useradd, aunque parezca algo chistoso el hecho que solo cambian de posicion en los nombres, veremos que es mucho mas que ello.
+                    </p>
+                    <article>
+                        <h1>AddUser</h1>
+                        <img src="../img/Usuarios2.png" alt="">
+                       <p>
+                        como podemos ver adduser nos muestra una informacion mas detallada, pediendonos nombre de usuario, numero de telefono, de trabajo  y otros, ademas nos crea el directorio home para el logeo de nuestro usuario y se ubica en la carpeta bash, la cual nos permite que iniciemos sesion con este usuario.
+                       </p>
+                        <span>
+                            <strong>
+                                useradd
+                            </strong>
+                            <br>
+                            Por otro lado el comando useradd simplemente nos crea el usuario, y para generar todo aquello que se genero automaticamente con el comando adduser debemos de colocar algunas lineas extras al comando.
+                        </span>
+                    </article>
+
+                    <article>
+                        <h1>Ver usuarios agregador</h1>
+                        <p>
+                            Para ver los usuarios agregados podemos tomar dos opciones, la primera es reiniciar tu dispositivo una vez el usuario este creado y podras ver que te dara las demas opciones para inciar sesion, cabe recalcar que si lo creaste con comando useradd, y no lo terminaste de configurar, es muy probable que no puedas iniciar sesion.
+                            La segunda forma de ver los usuarios creados, es accediendo a donde se encuentra su contenido que esta en la carpeta etc, en el fichero passwd, lo cual corresponde a la siguiente ruta /etc/passwd, para su demostracion lo acompanaremos del comando grep. buscando los usuarios que hemos creado.
+                        </p>
+                        
+                        <img src="../img/Usuarios3.png" alt="">
+            
+                        <span>
+                            en este caso accedimos a la ruta donde se encontraban los archivos con el comando grep, y vemos que tenemos nuestros dos usuarios creados.
+                        </span>
+                    </article>
+
+                    <article>
+                        <h1>Eliminacion de Usuarios</h1>
+                        <p>
+                            asi como logramos crear usuarios los podemos eliminar con su contraparte, es decir, si creamos usuarios con el comando adduser, podemos eliminarlo con el comando deluser, y si creamos usuarios con el comando useradd, podemos eliminarlos con el comando userdel.
+                        </p>
+                        <h2>
+                            Ejemplo
+                        </h2>
+                        <p>
+                            primero que nada procederemos a buscar los usuarios que hemos creados, tal cual hicimos en el ejemplo pasado, entrando a la carpeta etc fichero passwd.
+                        </p>
+                        <img src="../img/EliminarUser1.png" alt="">
+                        <span>
+                            <strong>
+                                deluser NombreUsuario
+                            </strong>
+                        </span>
+                        <img src="../img/EliminarUser2.png" alt="">
+                        <p>
+                            Como podemos observar nos borra el Usuario2, con todas sus localidades, este es una mas de las cualidades del comando adduser que al momento de crearlo nos crea sus directorios y mas con lo cual ya podemos logearnos con dicho usuario, a diferencia del comando useradd, que solo crea el usuario y debemos hacer el resto manualmente.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h1>Actualizacion de contrase'as</h1>
+                        <p>
+                            muchas veces el entorno grafico de windows al que tanto estamos acostumbrados nos brinda una manera muy facil de hacer las cosas, es por eso que al momento de migrar a linux, vemos todo muy complicado,  pero esto solo es cuestion de constancia y esfuerzo.
+                        </p>
+                        <h2>
+                            Actualizando contrasenas.
+                        </h2>
+                        <p>
+                            La actualizacion de contrasenas en linux es muy sencilla, lo primero que debemos hacer es colocar el comando passwd y colocar la contrasena acual, luego la nueva contrasena, esto claro esta si eres el usuario que se encuentra logeado. eh Aqui un ejemplo.
+                        </p>
+                        <img src="../img/ActualizaContra.png" alt="">
+                       
+                        <p>
+                            Como podemos ver es algo muy sencillo. 
+
+                            En caso de que estemos administrando un sistema de mas de 10 usuarios, solo el usuario root podra cambiar la contrasena de cualquiera de estos usuarios.
+                        </p>
+                    </article>
+
+                </blockquote>
+                
+            </section>
+
+            <section class="TextInformation">
+                <blockquote>
+                    <h1>Bloque 13</h1>
+                    <h3>Redireccion de la informacion</h3>
+                </blockquote>
+                <blockquote>
+                    <p>
+                        Muchas veces nos topamos con 
+                        que debemos realizar una configuracion de red en linux,
+                         y movimos algo que no recordamos y nuestra red deja de funcionar, 
+                         una de las ayuda que nos brinda linux es la redireccion, la redireccion 
+                         se trata de trasladar el contenido de un archivo a otro, este otro archivo puede ya existir, o en caso de no existir este lo creara automaticamente.
+                    </p>
+                
+                    <article>
+                        <h1>Salidas en Linux</h1>
+                       <p>
+
+                        debemos conocer que la terminal de linux funciona bajo ciertos estandares de entradas y de salidas, las cuales las vemos al momento de interactuar con la consola de linux, por ejemplo un tipo de salida seria jugar con el comando echo, el cual sirve para escribir ficheros, pero en este caso no le 
+                        colocaremos ni un fichero, simplemente lo escribiremos en la pantalla para que su salida sea la misma.
+                       </p>
+                       <img src="../img/Redireccion1.png" alt="">
+                       <p>
+                        como podemos ver ya que no especificamos el lugar donde guardabamos el mensaje, nos muestra como una ventana de salida, otros ejemplos de salida seria la busqueda de un caracter o palabra dentro de un documento de texto.
+                       </p>
+                       <img src="../img/Redireccion2.png" alt="">
+                       <span>
+                        como podemos ver en este ejemplo ejecutamos los comandos ls, cat, y grep, los cuales nos mostraron datos de salida dentro de nuestro ordenador.
+                       </span>
+                    </article>
+
+                    <article>
+                        <h1>Entradas en Linux</h1>
+                        <p>
+                            asi como existen los datos de salida, tambien existen los datos de entrada en linux, los cuales los vamos a ver a continuacion.
+                        </p>
+                        <img src="../img/Redireccion3.png" alt="">
+                        <p>
+                            Uno de los ejemplos claros de entrada es el comando nano, con el cual editamos lo que se encuentra en el documento, siempre y cuando tengamos los permisos necesarios.
+
+                            otra de las opciones que podemos nombrar al momento de hablar sobre datos de entradas es por medio del comando echo.
+
+                            por ejemplo ya no queremos que el texto de echo se muestre como una salida de pantalla, sino mas bien que se escriba dentro de un archivo.txt, a continuacion veremos como.
+                        </p>
+                        <img src="../img/Redireccion4.png" alt="">
+                        <p>
+                            como podemos ver usamos el comando echo  con el texto, y precedido del caracter  `>` este nos indica que debemos escribir a un archivo en concreto, por ejemplo al archivo saludos.txt, que si no esta este archivo, este se creara automaticamente, y si queremos sobreescribirlo, simplemente usamos dos veces el mismo caracter.
+
+                            estos caracteres especiales tambien los podemos utilizar con una mezclas de comando, por ejemplo.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h1>Ejercicio</h1>
+                        <p>el siguiente ejercicio consiste en buscar dentro de los usuarios creados los usuarios Nuevousuario1 y Nuevousuario2, y colocarlos en un archivo de texto denominado UsuariosCreado.txt, que se encontrara en la carpeta Desktop.
+
+                            Lo primero sera ver en que directorio estamos con el comando pwd
+                        </p>
+                        <img src="../img/Redireccion5.png" alt="">
+                        <p>
+                            Lo segundo que necesitaremos es encontrar la ruta al escritorio o Desktop, y luego copiar su ruta.
+                        </p>
+                        <img src="../img/Redireccion6.png" alt="">
+                        <p>
+                            una vez realizado aquello, procedemos a cambiar a nuestro directorio raiz, y desde ahi procedemos a buscar los usuarios creados con el comando grep -E.
+                        </p>
+                        <img src="../img/Redirecion7.png" alt="">
+
+                        <p>
+                            sera introducida en el archivo de texto de la ruta especificada.
+                        </p>
+                        <br>
+                        <p>
+                            Lo siguiente que deberemos hacer es apuntar a la ruta del escritorio que copiamos anteriormente y pasarla como parametro no sin antes colocarle el signo mayor que >, este nos indicara que ya esa salida sera introducida en el archivo de texto de la ruta especificada.
+                        </p>
+                        <img src="../img/Redireccion8.png" alt="">
+
+                    </article>
+
+                </blockquote>
+                
+            </section>
 
         </section>
         
