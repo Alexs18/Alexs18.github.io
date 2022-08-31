@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/Index.css">
-    <link rel="stylesheet" href="../Css/Linux.css">
+    <link rel="stylesheet" href="/Css/Index.css">
+    <link rel="stylesheet" href="/Css/Linux.css">
     <title>Commandos en Linux</title>
 </head>
 <body>
     <header>
         <div class="ContentImg">
-            <img class="ClassLogo" src="../img/UbuntuLogo.jpg" alt="">
+            <img class="ClassLogo" src="/img/UbuntuLogo.jpg" alt="">
         </div>
         <div class="ContentMain">
            <ul>
@@ -42,7 +42,7 @@
                     </p>
                     <ul>
                         <li>Primary</li>
-                        <li>Extendida</li>
+                        <li>Expanded</li>
                         <li>Logic</li>
                     </ul>
                     <p>
@@ -50,16 +50,16 @@
                         the system files we can need it to put other opartive system, for example if you wanna create a spacio with 2 OS, we’ll need made one primary partition, and inside this partition we can put our new OS. To linux our files system will be EXT3 Or EXT4
                         now, we’ll procees to create a new partition, on, windows like a commond mode.
                     </p> 
-                    <img class="ImagenesDocumentacion" src="../img/diskpart.png" alt="">   
+                    <img class="ImagenesDocumentacion" src="/img/diskpart.png" alt="">   
                     <p>we need to open a new windows like ejecutar mode, and write down the next it.</p>
-                    <img class="" src="../img/Terminal.png" alt="">
+                    <img class="" src="/img/Terminal.png" alt="">
                     <p>
                         we can write dowm the next.
                         list disk, to work to know when disk there are.
                         select disk # to select one disk to work.
                         once again list disk to confirm our disk is select rigth.
                     </p>
-                    <img src="../img/Terminal1.png" alt="">
+                    <img src="/img/Terminal1.png" alt="">
                     <p>
                         to see all partition in our disk, we can put the next command.
                         list partition
@@ -68,7 +68,7 @@
                         Para crearlo de forma mas rapida podemos proceder a crearlo desde el administrador grafico, entrando al administrador de disco dando click derecho en el boton de windows y luego creando su particion de manera simple.
                         el resultado deberia salirnos algo similar a esto.
                     </p>
-                    <img class="TerminalI" src="../img/Terminal2.png" alt="">
+                    <img class="TerminalI" src="/img/Terminal2.png" alt="">
                 </blockquote>
                 
             </section>
@@ -88,12 +88,12 @@
                         Para ello reiniciaremos el sistema con nuestra memoria ya booteada dentro de ella y lo siguiente que procederemos a hacer es elegir la tecla esc lo cual nos brindará el menu de opciones.
                         en dicho menu colocamos la opción arranque desde la USB, y procedemos con la instalación, siempre y cuando recordemos cual es nuestra partición que creamos en el capitulo anterior.
                     </p>
-                    <img class="TerminalI" src="../img/Terminal3.png" alt="">
+                    <img class="TerminalI" src="/img/Terminal3.png" alt="">
                     <p>
                         Como podemos observar nos da la opcion de instalar ubuntu junto a windows
                         y la de algo mas que nos permite elegir nuestro disco duro creado.
                     </p>
-                    <img class="TerminalI" src="../img/Terminal4.png" alt="">
+                    <img class="TerminalI" src="/img/Terminal4.png" alt="">
                     <p>
                         Nos brindara la opcion para el formateo de los discos o particiones que crean conveniente.
                         Luego el proceso es el mismo como si fueramos a instalar una maquina virtual
@@ -120,13 +120,13 @@
                         Ls: Sirve para listar el contenido de una carpeta.
                         ls NameFile sirve para listar el contenido de una carpeta especifica.
                     </p>
-                    <img src="../img/Comandos.png" alt="">
+                    <img src="/img/Comandos.png" alt="">
                     <p>
                         Por ejemplo si tenemos una carpeta dentro de otra podremos ver su contendido siempre y cuando coloquemos la ruta completa.
                         ls -l sirve para ver los comandos con sus respectivos permisos, estos seran drwxr los cuales se explicaran en una seccion posterior.
                         ls -r sirve para mirar los archivos contrario al alfabeto es decir de Z a A.
                     </p>
-                    <img src="../img/Comandos1.png" alt="">
+                    <img src="/img/Comandos1.png" alt="">
                     <p>
                         Como podemos observar tambien podemos hacer agrupaciones, es decir combinar comandos para que este resultado sea mas factible de aquello que queramos, como podemos ver a continuacion.
                     </p>
@@ -136,7 +136,7 @@
                     <p>
                         para conocer donde nos encontramos actualmente es necesario el comando pwd, este comando nos permitira ver la ruta en la cual nos encontramos, con estos sera mas facil acceder a la ruta que queramos o movernos entre ellas.
                     </p>
-                    <img src="../img/Comandos2.png" alt="">
+                    <img src="/img/Comandos2.png" alt="">
                     <p>
                         antes que nada debemos recordar que la estructura de las carpetas en linux esta disenada con la estructura anterior, es decir en la parte principal se encuentran la estructura raiz, y dentro de esa estructura estaran ciertas carpetas que tendras configuraciones importantes para el sistema, como es el caso de la carpeta var en la cual se almacenaran las configuraciones de base de datos, o en la carpeta etc en la cual se encontraran configuraciones de red. a esta estructura se la conoce como estandar de jerarquia.
 
@@ -151,7 +151,7 @@
                         este comando indicara en que seccion yo quisiera estar, por ejemplo, si tenemos el fichero archivos dentro de la carpeta actual llamada home, debemos colocar el comando cd seguido del nombre de la carpeta a la cual queramos tener acceso.
                         ejemplo.
                     </p>
-                    <img src="../img/Comandos3.png" alt="">
+                    <img src="/img/Comandos3.png" alt="">
                     <p>
                         Como podemos observar en el primer punto nos da la ruta en la cual nos encontramos actualmente,luego de ello utilizamos el comando cd para movernos al fichero Desktop que se encuentra dentro de esa ruta, una vez terminado ese proceso accederemos a una ruta que se encuentra un paso abajo de la raiz, la cual es /etc/calendar, la accedemos de la siguiente manera.
                         <br>
@@ -169,7 +169,7 @@
                         carpetas mas, es decir la ruta seria algo asi, carpetaprincipal/carpeta1/carpetamostrar
                          en ese caso no necesariamente necesitaremos movernos con el comando cd, simplemente necesitaremos colocar ls mas el argumento que queramos, ya sea -l o -r o ambos combinados, y luego la ruta que queramos mostrar, tal cual como se vera en el siguiente ejemplo.
                     </p>
-                    <img src="../img/Comandos4.png" alt="">
+                    <img src="/img/Comandos4.png" alt="">
                     <p>
                         como podemos observar tenemos muchas de dichas convinaciones establecidas aqui.
                     </p>
@@ -191,7 +191,7 @@
                     <span>
                         nano ListadeAnimales.txt
                     </span>
-                    <img src="../img/Contenidos1.png" alt="">
+                    <img src="/img/Contenidos1.png" alt="">
                     <p>
                         Luego de ello guardamos con control O y salimos con control x.
                         luego de ello veremos las siguentes formas de listar un fichero en linux
@@ -200,30 +200,30 @@
                     <p>
                         nos mostrara el contenido de un archivo sin importar la cantidad de lineas que se encuentren en el, es decir no nos restringuira la vista a solo unas cuantas lineas.
                     </p>
-                    <img src="../img/Contenido2.png" alt="">
+                    <img src="/img/Contenido2.png" alt="">
 
                     <h3>Head</h3>
                     <p>
                         el comando head nos restringuira la vision a las 10 primeras lineas del contenido que queramos mostrar.
                     </p>
-                    <img src="../img/Contenido3.png" alt="">
+                    <img src="/img/Contenido3.png" alt="">
 
                     <h3>Tail</h3>
                     <p>
                         el comando tail por el contrario nos mostrara las 10 ultimas lineas.
                     </p>
-                    <img src="../img/Contenido4.png" alt="">
+                    <img src="/img/Contenido4.png" alt="">
                     <h3>Similitudes</h3>
                     <p>
                         Sin embargo estos 2 comando tienen una particularidad, es decir que podemos visualizar entre lineas especificas, es decir podemos decirle que nos muestre solo las 5 primeras lineas o las lineas que queramos ver, y esto puede ser muy interesante cuando queramos examinar un codigo de forma rapida.
                         como podemos notar en el siguiente ejemplo al comando tail le decimos que queremos ver las 2 ultimas lineas, y al comando head, le decimos que queremos ver las 3 primeras lineas, y tambien nos damos cuenta que es un argumento que no se puede utilizar con el comando cat.
                     </p>
-                    <img src="../img/Contenido5.png" alt="">
+                    <img src="/img/Contenido5.png" alt="">
                     <h3>Ejemplo</h3>
                     <p>
                         haciendo un ejemplo con un archivo css, podemos ver que tambien puede exeder el limitante 10 que nos indica su documentacion oficial, si le pasamos un numero mayor a este 
                     </p>
-                    <img src="../img/Contenido6.png" alt="">
+                    <img src="/img/Contenido6.png" alt="">
 
                 </blockquote>
                 
@@ -238,11 +238,11 @@
                       como podremos recordar el comando ls -l nos permite visualizar los ficheros con los respectivos permisos correspondientes, es decir de lectura, escritura, ejecucion, etc.
                         ahora lo que veremos sera que significan esos permisos, a quienes estan dirigidos, y como podemos agregar, cambiar o eliminar alguno de esos permisos.
                     </p>
-                    <img src="../img/Grupos.png" alt="">
+                    <img src="/img/Grupos.png" alt="">
                     <p>
                         como podemos observar hemos listado el contenido que se encuentra en la carpeta principal es decir en la raiz, la primera columna nos mostrara los permisos que estos tienen, estos se distinguen con la siguiente connotacion drwxr en la tercer columna podemos ver cual es el usuario que esta asignado a este fichero, como podemos observar es el usuario root, en la cuarta columna vemos a que grupo pertenece este usuario con su respectivo fichero.
                     </p>
-                    <img src="../img/Grupos1.png" alt="">
+                    <img src="/img/Grupos1.png" alt="">
                     <p>
                         Como podemos observar, ya hemos ingresado al directorio home, en el cual ya no nos aparecera que sus archivos pertenecen al usuario root y el grupo root, si no que cambian al usuario que tenemos por defecto logeado, y su respectivo grupo que por defecto es el mismo nombre del usuario .
                     </p>
@@ -285,17 +285,17 @@
                         quisas suena un poco confuso, pero se entendera mas claro adelante.
                     </p>
 
-                    <img src="../img/Crud1.png" alt="">
+                    <img src="/img/Crud1.png" alt="">
                     <span>
                         dentro de la carpeta Ecuador vamos a crear el fichero personas.txt con una lista random de nombres.
                     </span>
-                    <img src="../img/Crud2.png" alt="">
+                    <img src="/img/Crud2.png" alt="">
                     <p>
                         Luego de ello procederemos a copiar esa lista de personas a la carpeta Canada, desde la ubicacion del escritorio, es decir un nivel menos en el cual nos encontramos actualmente.
 
                         Como tenemos a ambas carpetas en la misma ruta sera un poco mas sencilla la copia del archivo.
                     </p>
-                    <img src="../img/Crud3.png" alt="">
+                    <img src="/img/Crud3.png" alt="">
                     <p>
                         Como podemos observar, ya hemos ingresado al directorio home, en el cual ya no nos aparecera que sus archivos pertenecen al usuario root y el grupo root, si no que cambian al usuario que tenemos por defecto logeado, y su respectivo grupo que por defecto es el mismo nombre del usuario .
                     </p>
@@ -304,12 +304,12 @@
                         podemos mover multiples archivos con el comando mv, este nos permite mover carpetas, o ficheros, aunque si regresamos al inicio del post podemos ver que todo en linux es considerado un fichero.
                         lo primero que hacemos es verificar nuestro contenido, una vez realizado esto procedemos a colocar el comando mv seguido del archivo o carpeta que queramos mover y luego el destino.
                     </p>
-                    <img src="../img/Crud4.png" alt="">
+                    <img src="/img/Crud4.png" alt="">
                     <span>
                         Podemos tambien mover multiples archivos tal como se puede ver a continuacion.
                         Como podemos ver en esta ocacion movemos las carpetas ecuador y canada
                     </span>
-                    <img src="../img/Crud5.png" alt="">
+                    <img src="/img/Crud5.png" alt="">
                     <h3>
                         Eliminando Archivos
                     </h3>
@@ -326,7 +326,7 @@
 
                         en el primer ejemplo podemos ver que crea un archivo de texto y lo elimina con el comando rm, y en el segundo ejemplo podemos ver que crea una carpeta y la elimina con el comando rm -l
                     </p>
-                    <img src="../img/Crud6.png" alt="">
+                    <img src="/img/Crud6.png" alt="">
 
                 </blockquote>
                 
@@ -346,7 +346,7 @@
                         y este tiene demasiadas lineas.
                        
                     </p>
-                    <img src="../img/Examinando1.png" alt="">
+                    <img src="/img/Examinando1.png" alt="">
                     <span>
                        <strong> Uso Basico del comando grep</strong>
                     </span>
@@ -374,12 +374,12 @@
                         y el comando -v nos muetra las lineas que no coinciden con el patron de busqueda
                     </p>
 
-                    <img src="../img/Examinando2.png" alt="">
+                    <img src="/img/Examinando2.png" alt="">
                     <h2>Ejemplo</h2>
                     <span>
                         vamos a buscar cuantas etiquetas section hay en un archivo html, de unas 500 lineas de codigo mas o menos.
                     </span>
-                    <img src="../img/Examinando3.png" alt="">
+                    <img src="/img/Examinando3.png" alt="">
                     <p>
                         como podemos ver utilizando el comando grep sin parametros obtuvimos las secciones que tiene ese documento,
                          y con el parametro -n podemos especificar en que linea se encuentra dichas secciones.
@@ -394,20 +394,20 @@
                          super, para ello mexclariamos una serie de expresiones que veremos a continuacion.
                         En el siguiente ejemplo vemos como puede encontrar las etiquetas section  y las etiquetas div
                     </p>
-                    <img src="../img/Examinando4.png" alt="">
+                    <img src="/img/Examinando4.png" alt="">
                     <p>
                         y en el siguiente ejemplo aunque parezca igual, vemos como podemos unir el comando -n para que nos muestre las lineas en las cuales se encuentran.
                     </p>
-                    <img src="../img/Examinando5.png" alt="">
+                    <img src="/img/Examinando5.png" alt="">
                     <p>
                         Esto lo podemos hacer gracias al comando -E, aunque tambien podriamos usar el comando egrep, que viene siendo lo mismo.
                     </p>
-                    <img src="../img/Examinando6.png" alt="">
+                    <img src="/img/Examinando6.png" alt="">
                     <span>
                         En el ejemplo anterior,vemos como primero hace una busqueda especifica gracias a los caracteres [a-c] que nos cuenta la cantidad 
                         de letras a y c que hay en el documento, en el siguiente nos cuenta todas las etiquetas section, y en la ultima nos cuenta todas los caracteres que no son section, es decir el resto del documento.
                     </span>
-                    <img src="../img/Examinando7.png" alt="">
+                    <img src="/img/Examinando7.png" alt="">
 
                     <p>
                         En el ejemplo anterior podemos ver que tenemos 
@@ -505,7 +505,7 @@
                         nuestra direccion ip con el comando ifconfig.
                         y nos saldra el siguiente resultado.
                        </p>
-                       <img src="../img/Red1.png" alt="">
+                       <img src="/img/Red1.png" alt="">
                        <p>
                         en el cual en la tercera fila nos muestra la direccion ip con su mascara de red que
                          viene por defecto gracias al servicio de internet.
@@ -518,7 +518,7 @@
                             como no tenemos otra computadora conectada, apuntaremos a nuestra propia 
                             direccion ip, con el  parametro -c para especificar la cantidad de paquetes que queramos enviar y que su interaccion no sea continua
                         </p>
-                        <img src="../img/Red2.png" alt="">
+                        <img src="/img/Red2.png" alt="">
                         <p>
                             Por ejemplo en este ejemplo podemos ver que en el primer comando se detiene a partir del 4to envio, y como todo informatico, sabremos que se comienza a contar desde cero.
                             en el segundo comando, no le pasamos el parametro -c y como podremos darnos cuenta que la interaccion o el envio de paquetes continua, hasta que demos control+c.
@@ -556,7 +556,7 @@
                         para ver los procesos en linux, podemos usar el comando ps. el cual nos dara el siguiente resultado.
                        
                     </p>
-                    <img src="../img/Procesos1.png" alt="">
+                    <img src="/img/Procesos1.png" alt="">
                     <span>
                         quiza este comando no nos diga mucho por si solo, pero aqui nos indica cual es el Id de ese proceso (PID), TTY(TERMINAL EN LA CUAL SE EJECUTA), TIME(tiempo que lleva en ejecucion), CMD(Nombre del comando que inicio el proceso). entre otras caracteristicas que veremos mas a delante.
                     </span>
@@ -565,12 +565,12 @@
                        <p>
                         este comando podemos ver los procesos que corren actualmente en la terminal, como vemos en el siguiente ejemplo.
                        </p>
-                       <img src="../img/Procesos2.png" alt="">
+                       <img src="/img/Procesos2.png" alt="">
                        <p>
                         como podemos ver los procesos son aquellos que se estan ejecutando en la terminal 1 y 2 
                         con el comando ps -ef podemos ver mas detalles acerca de los procesos que se estan ejecutando.
                        </p>
-                       <img src="../img/Procesos3.png" alt="">
+                       <img src="/img/Procesos3.png" alt="">
                        <span>
                         como podemos ver los parametros nuevos que se 
                         anadieron fueron uid que significa el usuario que ejecuto o mantiene en ejecucion ese proceso, y el ppid, que es el padre del proceso, y en 
@@ -583,7 +583,7 @@
                         <p>
                             en este ejemplo, vamos a ejecutar un proceso, el cual sera nuestro editor de texto visual estudio code, y luego vamos a mostrarlo con el comando ps -e
                         </p>
-                        <img src="../img/Procesos4.png" alt="">
+                        <img src="/img/Procesos4.png" alt="">
                         <p>
                             Por ejemplo en este ejemplo podemos ver que en el primer comando se detiene a partir del 4to envio, y como todo informatico, sabremos que se comienza a contar desde cero.
                             en el segundo comando, no le pasamos el parametro -c y como podremos darnos cuenta que la interaccion o el envio de paquetes continua, hasta que demos control+c.
@@ -591,12 +591,12 @@
                         <span>
                             como podemos ver no lo encontramos ya que es un proceso que recien acabamos de ejecutar, y debemos buscarlo mas abajo, es decir al final o casi final de dicha lista.
                         </span>
-                        <img src="../img/Procesos5.png" alt="">
+                        <img src="/img/Procesos5.png" alt="">
                         <p>
                             como podemos ver se esta ejecutando con el numero de id, su tiempo de ejecucion y el nombre del proceso.
                             ahora si queremos detener o matar ese proceso usaremos el comando kill numeroID, cabe recalcar que cuando el proceso se inicio, se abrio visual studio code, y una vez lo cerremos o lo matemos, nuestro editor de codigo se cerrara.
                         </p>
-                        <img src="../img/Procesos6.png" alt="">
+                        <img src="/img/Procesos6.png" alt="">
                         <span>
                             como podemos notar ya no se encuentra el proceso que acabamos de eliminar.
                         </span>
@@ -614,12 +614,12 @@
                             para la practica abriremos 2 terminales, en la primera veremos los procesos activos en primer plano 
                             con el comando top, y en la segunda terminal en primer lugar crearemos un proceso y luego lo eliminaremos.
                         </p>
-                        <img src="../img/Procesos7.png" alt="">
+                        <img src="/img/Procesos7.png" alt="">
                         <P>
                             Aunque parece un poco complejo el proceso, nos acostumbramos a visualizarlos con la practica.
                             otra forma de buscar los procesos que estan ejecutando es uniendo el comando grep a nuestra busqueda.
                         </P>
-                        <img src="../img/Procesos8.png" alt="">
+                        <img src="/img/Procesos8.png" alt="">
                         <br>
                         <span>
                             Cabe destacar que tambien podemos convinar los comandos que podemos usar con grep para este proceso.
@@ -679,12 +679,12 @@
                                 sudo apt-get install cowsay
                             </strong>
                         </span>
-                        <img src="../img/Paquetes1.png" alt="">
+                        <img src="/img/Paquetes1.png" alt="">
                         <p>
                             si queremos desinstalarlo sera el siguiente comando
                         </p>
                        
-                        <img src="../img/Paquetes2.png" alt="">
+                        <img src="/img/Paquetes2.png" alt="">
                         <br>
                         <span>
                             como podemos ver ya esta totalmente desinstalado y no lo podemos usar.
@@ -704,7 +704,7 @@
                     <p>
                         Muchas veces para querer administrar un sistema operativo es necesario que este contenga multiples cuentas de usuarios, las cuales podremos administrar mediante el super usuario o el usuario root para crear una cuenta de usuario lo  primero que debemos hacer es ingresar a la terminal como usuario administrador.
                     </p>
-                    <img src="../img/Usuarios1.png" alt="">
+                    <img src="/img/Usuarios1.png" alt="">
                     <p>
                         en este caso como ya habiamos accedido con anterioridad no nos pedira la contrasena nuevamente.
 
@@ -714,7 +714,7 @@
                     </p>
                     <article>
                         <h1>AddUser</h1>
-                        <img src="../img/Usuarios2.png" alt="">
+                        <img src="/img/Usuarios2.png" alt="">
                        <p>
                         como podemos ver adduser nos muestra una informacion mas detallada, pediendonos nombre de usuario, numero de telefono, de trabajo  y otros, ademas nos crea el directorio home para el logeo de nuestro usuario y se ubica en la carpeta bash, la cual nos permite que iniciemos sesion con este usuario.
                        </p>
@@ -734,7 +734,7 @@
                             La segunda forma de ver los usuarios creados, es accediendo a donde se encuentra su contenido que esta en la carpeta etc, en el fichero passwd, lo cual corresponde a la siguiente ruta /etc/passwd, para su demostracion lo acompanaremos del comando grep. buscando los usuarios que hemos creado.
                         </p>
                         
-                        <img src="../img/Usuarios3.png" alt="">
+                        <img src="/img/Usuarios3.png" alt="">
             
                         <span>
                             en este caso accedimos a la ruta donde se encontraban los archivos con el comando grep, y vemos que tenemos nuestros dos usuarios creados.
@@ -752,13 +752,13 @@
                         <p>
                             primero que nada procederemos a buscar los usuarios que hemos creados, tal cual hicimos en el ejemplo pasado, entrando a la carpeta etc fichero passwd.
                         </p>
-                        <img src="../img/EliminarUser1.png" alt="">
+                        <img src="/img/EliminarUser1.png" alt="">
                         <span>
                             <strong>
                                 deluser NombreUsuario
                             </strong>
                         </span>
-                        <img src="../img/EliminarUser2.png" alt="">
+                        <img src="/img/EliminarUser2.png" alt="">
                         <p>
                             Como podemos observar nos borra el Usuario2, con todas sus localidades, este es una mas de las cualidades del comando adduser que al momento de crearlo nos crea sus directorios y mas con lo cual ya podemos logearnos con dicho usuario, a diferencia del comando useradd, que solo crea el usuario y debemos hacer el resto manualmente.
                         </p>
@@ -775,7 +775,7 @@
                         <p>
                             La actualizacion de contrasenas en linux es muy sencilla, lo primero que debemos hacer es colocar el comando passwd y colocar la contrasena acual, luego la nueva contrasena, esto claro esta si eres el usuario que se encuentra logeado. eh Aqui un ejemplo.
                         </p>
-                        <img src="../img/ActualizaContra.png" alt="">
+                        <img src="/img/ActualizaContra.png" alt="">
                        
                         <p>
                             Como podemos ver es algo muy sencillo. 
@@ -809,11 +809,11 @@
                         debemos conocer que la terminal de linux funciona bajo ciertos estandares de entradas y de salidas, las cuales las vemos al momento de interactuar con la consola de linux, por ejemplo un tipo de salida seria jugar con el comando echo, el cual sirve para escribir ficheros, pero en este caso no le 
                         colocaremos ni un fichero, simplemente lo escribiremos en la pantalla para que su salida sea la misma.
                        </p>
-                       <img src="../img/Redireccion1.png" alt="">
+                       <img src="/img/Redireccion1.png" alt="">
                        <p>
                         como podemos ver ya que no especificamos el lugar donde guardabamos el mensaje, nos muestra como una ventana de salida, otros ejemplos de salida seria la busqueda de un caracter o palabra dentro de un documento de texto.
                        </p>
-                       <img src="../img/Redireccion2.png" alt="">
+                       <img src="/img/Redireccion2.png" alt="">
                        <span>
                         como podemos ver en este ejemplo ejecutamos los comandos ls, cat, y grep, los cuales nos mostraron datos de salida dentro de nuestro ordenador.
                        </span>
@@ -824,7 +824,7 @@
                         <p>
                             asi como existen los datos de salida, tambien existen los datos de entrada en linux, los cuales los vamos a ver a continuacion.
                         </p>
-                        <img src="../img/Redireccion3.png" alt="">
+                        <img src="/img/Redireccion3.png" alt="">
                         <p>
                             Uno de los ejemplos claros de entrada es el comando nano, con el cual editamos lo que se encuentra en el documento, siempre y cuando tengamos los permisos necesarios.
 
@@ -832,7 +832,7 @@
 
                             por ejemplo ya no queremos que el texto de echo se muestre como una salida de pantalla, sino mas bien que se escriba dentro de un archivo.txt, a continuacion veremos como.
                         </p>
-                        <img src="../img/Redireccion4.png" alt="">
+                        <img src="/img/Redireccion4.png" alt="">
                         <p>
                             como podemos ver usamos el comando echo  con el texto, y precedido del caracter  `>` este nos indica que debemos escribir a un archivo en concreto, por ejemplo al archivo saludos.txt, que si no esta este archivo, este se creara automaticamente, y si queremos sobreescribirlo, simplemente usamos dos veces el mismo caracter.
 
@@ -846,15 +846,15 @@
 
                             Lo primero sera ver en que directorio estamos con el comando pwd
                         </p>
-                        <img src="../img/Redireccion5.png" alt="">
+                        <img src="/img/Redireccion5.png" alt="">
                         <p>
                             Lo segundo que necesitaremos es encontrar la ruta al escritorio o Desktop, y luego copiar su ruta.
                         </p>
-                        <img src="../img/Redireccion6.png" alt="">
+                        <img src="/img/Redireccion6.png" alt="">
                         <p>
                             una vez realizado aquello, procedemos a cambiar a nuestro directorio raiz, y desde ahi procedemos a buscar los usuarios creados con el comando grep -E.
                         </p>
-                        <img src="../img/Redirecion7.png" alt="">
+                        <img src="/img/Redirecion7.png" alt="">
 
                         <p>
                             sera introducida en el archivo de texto de la ruta especificada.
@@ -863,7 +863,7 @@
                         <p>
                             Lo siguiente que deberemos hacer es apuntar a la ruta del escritorio que copiamos anteriormente y pasarla como parametro no sin antes colocarle el signo mayor que >, este nos indicara que ya esa salida sera introducida en el archivo de texto de la ruta especificada.
                         </p>
-                        <img src="../img/Redireccion8.png" alt="">
+                        <img src="/img/Redireccion8.png" alt="">
 
                     </article>
 
